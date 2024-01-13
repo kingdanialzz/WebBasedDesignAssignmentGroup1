@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HERA Overall Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="image/logorestaurant.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+
+    <style>
+        /* king styles*/
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .logo-img {
+            position: absolute;
+            top: 0px;
+            left: 100px;
+        }
+
+        .jumbotron {
+            background-image: url(image3/black.jpg);
+            opacity: 3.0;
+            color: #ffffff;
+            background-size: cover;
+            text-shadow: #000000;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .jumbotron2 {
+            background-image: url(image/kitchen.jpg);
+            text-align: right;
+            opacity: 3.0;
+            background-size: cover;
+            color: #ffffff;
+            text-shadow: #000000;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .bg-grey {
+            background-color: #fffcfc;
+        }
+
+        .logo-small {
+            color: #673147;
+            font-size: 50px;
+        }
+
+        .logo {
+            color: #673147;
+            font-size: 200px;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .recipe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 900px; /* Adjust this value as needed */
+        }
+
+        .recipe img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .panel {
+            border-radius: 30px 30px 0px 0px !important;
+            transition: box-shadow 0.5s;
+        }
+
+        .panel:hover {
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+        .panel-footer .btn:hover {
+            border: 1px solid #000000;
+            background-color: #770737 !important;
+            color: #F3CFC6;
+        }
+
+        .panel-heading {
+            color: #620021 !important;
+            background-color: #F8C8DC !important;
+            padding: 25px;
+            border-bottom: 0px solid transparent;
+            border-radius: 30px 30px 0px 0px;
+        }
+
+        .panel-footer {
+            background-color: white !important;
+        }
+
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #FBCEB1;
+            color: #620021;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #b39eb5;
+            z-index: 9999;
+            border-bottom-width: 5px;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #673147 !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        .footer {
+            background-color: #ddcedf;
+            padding: 10px;
+        }
+
+        .col-md-6 {
+                text-align: center;
+                
+                margin: 25px 0;
+            }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                text-size-adjust: 50px;
+                margin: 25px 0;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+
+        #overallmenu {
+            padding: 60px 0;
+        }
+
+        #overallmenu .row {
+            margin-top: 30px;
+        }
+
+        #overallmenu p {
+            color: rgba(0, 0, 0, .7);
+            font-size: medium;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- King Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-right">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span class="logo-img">
+                        <img src="image/logorestaurant.png" height="100" width="100" alt="logo"><br>
+                    </span>
+                    <span class="restaurant-name">HERA DishCovery Restaurant</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="margin-right: -185px;">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li><a href="Menu.html">MENU</a></li>
+                    <li><a href="CustomerService.html">CUSTOMER SERVICE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- King existing navigation bar code... -->
+
+
+    <div class="jumbotron2 text-center" style="background-color: #ffffff;">
+        <h1 style="color:white; font-family: system-ui, -apple-system, BlinkMacSystemFont; font-size: 500%">
+            <b>Culinary delights await you.</b>
+        </h1>
+    </div>
+<!-- Overall Menu Section -->
+<div id="overallmenu" class="container-fluid text-center">
+
+ 
+<!-- Row for Portrait Images -->
+<div class="row text-center slideanim">
+    <div class="col-md-6 mx-auto">
+        <div class="recipe d-flex align-items-center flex-column">
+            <img src="image3/Spaghetti.jpg" alt="Spaghetti" class="img-responsive" width="400" height="500">
+            <p style="font-size: large; color:#303030;"><strong>Western</strong></p>
+        </div>
+    </div>
+    <div class="col-md-6 mx-auto">
+        <div class="recipe d-flex align-items-center flex-column">
+            <img src="image3/bomboloni.jpg" alt="bomboloni" class="img-responsive" width="400" height="500">
+            <p style="font-size: large; color:#303030;"><strong>Pastries</strong></p>
+        </div>
+    </div>
+</div>
+
+    <h2 style="font-size: 400%;">Overall Menu</h2>
+    <h4>Explore our diverse range of dishes</h4><br>
+
+    <!-- Row for Landscape Image -->
+    <div class="row text-center slideanim">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <img src="image3/Mee.jpg" alt="Landscape Image" class="img-fluid" style="width: 100%; max-width: 1000px; height: auto;"><br>
+                <p style="font-size: large; color:#303030"><strong>Asians</strong></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron text-center" style="background-color: #ffffff;">
+        <h1 style="color:white; font-family: system-ui, -apple-system, BlinkMacSystemFont; font-size: 500%">
+            <b>Elevate your dining experience</b>
+        </h1>
+    </div>
+
+
+    <p>Discover a symphony of flavors at HERA DishCovery Restaurant. Our overall menu offers a delightful selection of dishes that cater to every palate. From exquisite entrees to mouth-watering desserts, our culinary creations promise to take you on a gastronomic journey.</p>
+</div>
+
+    <!-- Navigation Bottom Section -->
+    <div id="pricing" class="container-fluid">
+        <div class="text-center">
+        </div>
+        <div class="row slideanim">
+
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Wondering about us and want to know us better?</h1>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Come a little closer, delve into our world, and know us better.
+                            Come, discover the heart and soul of HERA DishCovery. Discover the history
+                            of our company and fall in love with us!</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="AboutUs.html">
+                            <button class="btn btn-lg">About Us</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Come and see what we serve for you!</h1>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Browse through our menu, and let your taste buds dance to the rhythm of exquisite flavors.
+                            Each dish is a testament to our commitment to providing an unforgettable dining experience.
+                        </h4>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="Menu.html">
+                            <button class="btn btn-lg">View Menu</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Do you need help dealing with our restaurant? </h1>
+                    </div>
+                    <div class="panel-body">
+                        <h4>From quick answers to frequently asked questions to personalized assistance for unique
+                            situations,
+                            HERA DishCovery Customer Service is designed with you in mind. </h4>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="CustomerService.html">
+                            <button class="btn btn-lg">Customer Service</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid text-center footer">
+        <img src="image/logorestaurant.png" style="width: 5%; height: 5%">
+        <p>&copy;2023 Owned by Group 1 HERA DishCovery Restaurant Sdn. Bhd. (Raja, Atikah, Efey, Haziqah) · All Rights
+            Reserved.</p>
+    </footer>
+
+    <script>
+
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>

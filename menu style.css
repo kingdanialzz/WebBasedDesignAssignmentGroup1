@@ -1,0 +1,247 @@
+		body {
+		    font: 400 15px Lato, sans-serif;
+		    line-height: 1.8;
+		    color: #818181;
+		}
+
+		h1 {
+		    color: #000;
+		    padding-top: 0;
+		    padding-bottom: 10px;
+		}
+
+		h2 {
+		    font-size: 24px;
+		    text-transform: uppercase;
+		    color: #303030;
+		    font-weight: 600;
+		    margin-bottom: 30px;
+		}
+
+		h4 {
+		    font-size: 19px;
+		    line-height: 1.375em;
+		    color: #303030;
+		    font-weight: 400;
+		    margin-bottom: 30px;
+		}
+
+		.logo-img {
+		    position: absolute;
+		    top: 0px;
+		    left: 100px;
+		}
+
+		.jumbotron {
+		    background-image: url('image2/background\ menu.jpg');
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    font-family: Montserrat, sans-serif;
+		    padding: 213px 50px;
+		    text-shadow: #ffffff;
+		}
+
+		.jumbotron h1 {
+		    color: #ffffff;
+		    font-family: Lato, sans-serif;
+		    font-size: 60px;
+		    text-transform: uppercase;
+		    margin-bottom: 20px;
+		    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		.jumbotron img {
+		    width: 100%;
+		    height: 100%;
+		}
+
+		.jumbotron::before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    background-color: rgba(0, 0, 0, 0.3);
+		}
+
+		.container-fluid {
+		    padding: 60px 50px;
+		}
+
+		.bg-grey {
+		    background-color: #fffcfc;
+		}
+
+		.logo-small {
+		    color: #673147;
+		    font-size: 50px;
+		}
+
+		.logo {
+		    color: #673147;
+		    font-size: 200px;
+		}
+
+		.thumbnail {
+		    padding: 0;
+		    border: none;
+		    border-radius: 0;
+		    overflow: hidden;
+		}
+
+		.thumbnail img {
+		    width: 100%;
+		    height: 360px;
+		}
+
+		.slideanim {
+		    visibility: hidden;
+		}
+
+		.slide {
+		    animation-name: slide;
+		    -webkit-animation-name: slide;
+		    animation-duration: 1s;
+		    -webkit-animation-duration: 1s;
+		    visibility: visible;
+		}
+
+		.item h4 {
+		    font-size: 19px;
+		    line-height: 1.375em;
+		    font-weight: 400;
+		    font-style: italic;
+		    margin: 70px 0;
+		}
+
+		.item span {
+		    font-style: normal;
+		}
+
+		.panel-footer .btn:hover {
+		    border: 1px solid #000000;
+		    background-color: #770737 !important;
+		    color: #F3CFC6;
+		}
+
+		.navbar {
+		    margin-bottom: 0;
+		    background-color: #b39eb5;
+		    z-index: 9999;
+		    border-bottom-width: 5px;
+		    font-size: 12px !important;
+		    line-height: 1.42857143 !important;
+		    letter-spacing: 4px;
+		    border-radius: 0;
+		    font-family: Montserrat, sans-serif;
+		}
+
+		.navbar li a,
+		.navbar .navbar-brand {
+		    color: #fff !important;
+		}
+
+		.navbar-nav li a:hover,
+		.navbar-nav li.active a {
+		    color: #673147 !important;
+		    background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+		    border-color: transparent;
+		    color: #fff !important;
+		}
+
+		@keyframes slide {
+		    0% {
+		        opacity: 0;
+		        transform: translateY(70%);
+		    }
+
+		    100% {
+		        opacity: 1;
+		        transform: translateY(0%);
+		    }
+		}
+
+		@-webkit-keyframes slide {
+		    0% {
+		        opacity: 0;
+		        -webkit-transform: translateY(70%);
+		    }
+
+		    100% {
+		        opacity: 1;
+		        -webkit-transform: translateY(0%);
+		    }
+		}
+
+		@media screen and (max-width: 768px) {
+		    .col-sm-4 {
+		        text-align: center;
+		        text-size-adjust: 50px;
+		        margin: 25px 0;
+		    }
+
+		    .btn-lg {
+		        width: 100%;
+		        margin-bottom: 35px;
+		    }
+		}
+
+		@media screen and (max-width: 480px) {
+		    .logo {
+		        font-size: 150px;
+		    }
+		}
+
+		.budget-menu-section {
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    color: #ffffff;
+		    text-align: center;
+		}
+
+		.budget-menu-btn {
+		    padding-left: 20px;
+		    padding-top: 210px;
+		}
+
+		.budget-menu-image img {
+		    max-width: 100%;
+		    height: 500px;
+		    padding-bottom: 20px;
+		}
+
+		.overall-menu-section {
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    color: #ffffff;
+		    padding: 50px 20px;
+		    text-align: center;
+		}
+
+		.overall-menu-btn {
+		    padding-left: 20px;
+		    padding-top: 210px;
+		}
+
+		.overall-menu-image img {
+		    width: 490px;
+		    height: 500px;
+		}
+
+		.menu-heading {
+		    font-size: 36px;
+		    font-weight: bold;
+		    margin-bottom: 20px;
+		}
+
+		.footer {
+		    background-color: #ddcedf;
+		    padding: 10px;
+		}

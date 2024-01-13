@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>HERA Customer Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="image/logorestaurant.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        h5 {
+            font: 400 15px Lato, sans-serif;
+            font-size: 40px;
+            line-height: 1.375em;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600PX;
+            margin-bottom: 30px;
+        }
+
+        h6 {
+            font: 400 15px Lato, sans-serif;
+            font-size: 40px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 40PX;
+            margin-bottom: 30px;
+        }
+
+    
+        .logo-img {
+            position: absolute;
+            top: 0px;
+            left: 100px;
+        }
+
+        .jumbotron {
+            background-image: url(image4/Help1.jpg);
+            opacity: 3.0;
+            color: #ffffff;
+            text-shadow: #000000;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .jumbotron2 {
+            background-image: url(image4/Help3.jpg);
+            opacity: 3.0;
+            color: #ffffff;
+            text-shadow: #000000;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .bg-grey {
+            background-color: #fffcfc;
+        }
+
+        .logo-small {
+            color: #673147;
+            font-size: 50px;
+        }
+
+        .logo {
+            color: #673147;
+            font-size: 200px;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #b39eb5;
+            z-index: 9999;
+            border-bottom-width: 5px;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #673147 !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+        .footer {
+            background-color: #ddcedf;
+            padding: 10px; /* Adjust the padding to your preference */
+        }
+
+        .panel {
+            border-radius: 30px 30px 0px 0px !important;
+            transition: box-shadow 0.5s;
+        }
+
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+        .panel-footer .btn:hover {
+            border: 1px solid #000000;
+            background-color: #770737 !important;
+            color: #F3CFC6;
+        }
+
+        .panel-heading {
+            color: #620021 !important;
+            background-color: #F8C8DC !important;
+            padding: 25px;
+            border-bottom: 0px solid transparent;
+            border-radius: 30px 30px 0px 0px;
+        }
+
+        .panel-footer {
+            background-color: white !important;
+        }
+
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #FBCEB1;
+            color: #620021;
+        }
+
+        .search-bar {
+            width: 700px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 150px;
+        }
+
+    </style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"></body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-right">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-img">
+                    <img src="image/logorestaurant.png" height="100" width="100" alt="logo"><br>
+                </span>
+                <span class="restaurant-name">HERA DishCovery Restaurant</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: -185px;">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="CustomerService.html">CUSTOMER SERVICE</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <br><br>
+    <h1 style = "font-size: 700%"><b>Customer Service</b></h1>
+    <h3 style = "font-size: 250%">Let us help you!</h3>
+    <br>
+</div>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-112 text-center"> 
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="search-bar" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4 text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <a href="#generalFAQ">
+                <img src="image4/FAQ.jpg"
+                    alt="General & FAQ" class="img-circle" width="75" height="75">
+            </a>
+            <p>General & FAQ</p>
+        </div>
+        <div class="col-md-3">
+            <a href="#insight">
+                <img src="image4/insight.jpg"
+                    alt="Insight" class="img-circle" width="75" height="75">
+            </a>
+            <p>Insight</p>
+        </div>
+        <div class="col-md-3">
+            <a href="custcare.html">
+                <img src="image4/custcare.jpeg" alt="Custcare" class="img-circle" width="75"
+                    height="75">
+            </a>
+            <p>Custcare</p>
+        </div>
+        <div class="col-md-3">
+            <a href="feedback.html">
+                <img src="image4/Feedback.jpeg" alt="Feedback" class="img-circle" width="75"
+                    height="75">
+            </a>
+            <p>Feedback</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: #ffffff; text-align: center;">
+    <div class="row">
+
+            <!-- Add the Google Maps code below -->
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe src="https://maps.google.com/maps?q=UMT,Kuala%20Terengganu&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                        frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            height: 400px;
+                            width: 100%;
+                            background: #fff;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            height: 400px;
+                            width: 100%;
+                        }
+
+                        .gmap_canvas iframe {
+                            position: relative;
+                            z-index: 2;
+                        }
+                    </style>
+                    <!-- Additional styles or attribution if needed -->
+                    <a href="https://blooketjoin.org">blooketjoin</a>
+                    <style>
+                        .mapouter a {
+                            color: #fff !important;
+                            position: absolute !important;
+                            top: 0 !important;
+                            z-index: 0 !important;
+                        }
+                    </style>
+                </div>
+            </div>
+
+<div class="container-fluid" style="background-color: #ffffff; text-align: right;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div style="width: 90%;"></div>
+            <h5>+088-132-1980</h5>
+            <p>For assistance, please contact us at:</p>
+            <p>info@heradish.com</p>
+            <p>UMT, Jalan Gong Badak, 21300 Kuala Terengganu, Terengganu</p>  
+            <p>Operating Hours : 10am-10pm</p>          
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron2 text-center" style="background-color: #ffffff; width: 100%">
+    <h1 style="color:white; font-family: system-ui; font-size: 500%">
+        <b>Exceeding Your Service Expectations</b>
+    </h1>
+</div>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Want to know more about us and what we achieve?</h1>
+                </div>
+                <div class="panel-body">
+                    <h4>It's a nice journey, and we are so delighted to introduce ourself to you!
+                        Explore what we have achieved during this restaurant development.
+                        </h4>
+                </div>
+                <div class="panel-footer">
+                    <a href="OrgAchievement.html" class="btn btn-lg">View Organization & Achievement</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Want to know where else is our branch?</h1>
+                </div>
+                <div class="panel-body">
+                    <h4>Our signature merchandise is now available at select locations near you,
+                        bringing the essence of our culinary artistry to every corner.</h4>
+                </div>
+                <div class="panel-footer">
+                    <a href="FranchiseInfo.html" class="btn btn-lg">Visit Other Franchise</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<footer class="container-fluid text-center footer">
+    <img src="image/logorestaurant.png" style="width: 5%; height: 5%">
+    <p>&copy;2023 Owned by Group 1 HERA DishCovery Restaurant Sdn. Bhd. (Raja, Atikah, Efey, Haziqah) · All Rights
+        Reserved.</p>
+</footer>
+
+</body>
+
+</html>
